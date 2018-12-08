@@ -15,12 +15,13 @@
 
   <ion-list ion-item = "item">
 
-    <h1>Paciente: {{item.nomeCliente}}</h1>
+    <h2>Paciente: {{item.nomeCliente}}</h2>
     <h3>Atendimento em: {{item.dataAtendimento}}</h3>
     <h3>Serviço: {{item.servico}}</h3>
     <h3>Estado: {{item.estadoString}}</h3>
     <h3>Dentista: {{item.nomeDentista}}</h3>
   </ion-list>
+  <button ion-button block outline (click)="finalizar()">Finalizar Atendimento</button>
 
 
 </ion-content>

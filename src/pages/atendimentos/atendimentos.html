@@ -12,11 +12,12 @@
   <ion-list>
     <button ion-item *ngFor="let item of items"(click)="listar(item)">
       <ion-avatar item-start>
-        <img src="assets/icon/favicon.ico">
+        <img src="assets/imgs/prev-odonto.jpg">
       </ion-avatar>
       <h2>{{item.nomeCliente}}</h2>
       <h3>{{item.dataAtendimento}}</h3>
       <p>{{item.servico}}</p>
+      <p>{{item.estadoString}}</p>
     </button>
   </ion-list>
 </ion-content>
